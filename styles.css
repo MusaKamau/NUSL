@@ -1,39 +1,11 @@
-
-.section-header {
-  margin-bottom: 60px;
-  position: relative;
-  padding-bottom: 20px;
+/* Common styles */
+.hidden {
+  display: none;
 }
 
-.section-header::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: #f82249;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-
-.section-header h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.section-header p {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 28px;
-  font-weight: 500;
-  color: #9195a2;
-}
+/* Subscription section */
 .subscribe {
-  padding: 23vh 0;
+  padding: 25vh 0;
   background: url(https://i.ibb.co/r4xf3sK/newslater.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -41,7 +13,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
   text-align: center;
@@ -62,27 +33,38 @@
   color: #fff;
 }
 
-.subscribe input {
-  background: ;
-  color: red;
-  border: 0;
-  outline: none;
-  margin: 0;
+/* Subscription form */
+#subscribe-form {
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.subscribe input,
+.subscribe button {
   padding: 9px 20px;
   border-radius: 50px;
   font-size: 14px;
+  outline: none;
+}
+
+.subscribe input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
 }
 
 .subscribe button {
-  border: 0;
-  padding: 9px 25px;
-  cursor: pointer;
   background: #f82249;
   color: #fff;
+  border: 0;
+  cursor: pointer;
   transition: all 0.3s ease;
-  outline: none;
-  font-size: 14px;
-  border-radius: 50px;
 }
 
 .subscribe button:hover {
@@ -92,6 +74,5 @@
 @media only screen and (min-width: 768px) {
   .subscribe input {
     min-width: 400px;
-}
-
+  }
 }
