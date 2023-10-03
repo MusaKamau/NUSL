@@ -1,23 +1,48 @@
-<section class="subscribe">
-  <div class="container">
-    <div class="section-header">
-      <h2>Stay Updated!</h2>
-      <p>Join 12,000+ investors receiving weekly updates on financial matters, success measures, and much more!</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe to Updates</title>
+  <!-- Add any additional meta tags, CSS, or scripts as needed -->
 
-    <form id="subscribe-form" method="post" action="process_form.php">
-      <div class="form-row justify-content-center align-items-center">
-        <div class="col-auto">
-          <input type="email" class="form-control" placeholder="Enter your Email" name="email" required>
-        </div>
-        <div class="col-auto">
-          <button type="submit">Subscribe</button>
-        </div>
+  <!-- Bootstrap CSS (assuming you're using Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Your custom CSS (if any) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="subscribe">
+    <div class="container">
+      <div class="section-header">
+        <h2>Stay Updated!</h2>
+        <p>Join our community of over 12,000 investors receiving weekly updates on financial matters, success measures, and much more!</p>
       </div>
-    </form>
 
-    <div id="success-message" class="hidden">
-      Thank you for subscribing! We'll keep you updated.
+      <form id="subscribe-form" method="post" action="process_form.php">
+        <div class="form-row justify-content-center align-items-center">
+          <div class="col-auto">
+            <input type="email" class="form-control" placeholder="Enter your Email" name="email" required>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="success-message" class="hidden alert alert-success mt-3">
+        Thank you for subscribing! We'll keep you updated.
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Bootstrap JS (if needed) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Your custom JavaScript (if any) -->
+  <script src="script.js"></script>
+</body>
+</html>
